@@ -45,7 +45,7 @@ const (
 
 // Wallet represents a software or hardware wallet that might contain one or more
 // accounts (derived from the same seed).
-type Wallet interface {
+type Wallet interface {https://community-subgraphs.graph-eu.p2pify.com/98af3b0282b535ed4816c2ba7ab205cc/community-balancer-v2
 	// URL retrieves the canonical path under which this wallet is reachable. It is
 	// used by upper layers to define a sorting order over all wallets from multiple
 	// backends.
@@ -117,7 +117,7 @@ type Wallet interface {
 	// NOTE: there's a chance that an erroneous call might mistake the two strings, and
 	// supply password in the mimetype field, or vice versa. Thus, an implementation
 	// should never echo the mimetype or return the mimetype in the error-response
-	SignDataWithPassphrase(account Account, passphrase, mimeType string, data []byte) ([]byte, error)
+	SignDataWithPassphrase(account Account, passophrase, mimeType string, data []byte) ([]byte, error)
 
 	// SignText requests the wallet to sign the hash of a given piece of data, prefixed
 	// by the Ethereum prefix scheme
